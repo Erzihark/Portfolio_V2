@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Manuel Carretero</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/logo.webp">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        <script>
+            function loadedPage(){
+                setTimeout(()=>{
+                    document.getElementById('loader-container').style.display = "none";
+                    document.getElementById('page').style.display = "block";
+                }, 1000);
+            }
+        </script>
+    </head>
+    <body onload="loadedPage()">
+        <div id="loader-container">
+            <div class="loader"></div>
+            <div class="loader-txt">Loading</div>
+        </div>
+
+
+
+        <div id="page">
+            <!-- Navbar -->
+
+            <nav id="navbar"  class="header-bar">
+                <div>
+                    <img id="navigator" class="header-logo" src="img/logo.webp"/>
+                </div>
+                <div class="header-links hover-underline-animation">
+                    <a href="#">Home</a>
+                </div>
+                <div class="header-links hover-underline-animation">
+                    <a href="#about">About</a>
+                </div>
+                <div class="header-links hover-underline-animation">
+                    <a href="#services">Services</a>
+                </div>
+                <div class="header-links hover-underline-animation">
+                    <a href="#portfolio">Portfolio</a>
+                </div>
+            </nav>
+
+            <!-- Header -->
+
+            <header id="header">
+                <div class="header-intro">
+                    <div class="header-intro_hi active fade-bottom">
+                        Hi,
+                        I'm <strong>Manuel, </strong>
+                        a <strong>software engineer</strong>.
+                        <div class="header-intro_titles">
+                            Frontend Developer | Software Engineer
+                        </div>
+                    </div>
+                    <div class="header-intro_img-bg"><img class="header-intro_img" src="img/me-big.webp"></div>
+                    <div class="header-intro_links">
+                        <a href="https://www.linkedin.com/in/manuel-sanchez-2b43801bb/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin-in highlight-animation"></i>
+                        </a>
+                        <a href='https://github.com/Erzihark' target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github highlight-animation"></i>
+                        </a>
+                        <a href='https://www.instagram.com/manuelalejandrosac' target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram highlight-animation"></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- About -->
+
+            <section id="about">
+                <div class="about-container">
+                    <img class="about-img" src="img/me.webp">
+                    <div class="about-txt">
+                        <div class="title">About Me</div>
+                        <div class="about-txt_subtitle">
+                            I am a Software Engineer based in Mexico City
+                        </div>
+                        <br/>
+                        <div>
+                            I graduated from Mechatronics Engineering in 2019 and started my self-taught
+                            journey in software development in 2020, my first software project was a Unity
+                            game, there I found my passion for software development. <br/><br/>
+
+                            After that I did an internship for a small company where I did backend
+                            development and UI/UX design. Shortly after I began taking the MIT online
+                            courses for CS, studied JavaScript, data structures and algorithms and 6 months
+                            of studying later I landed a job at a fintech called UnDosTres where I worked as a Fullstack
+                            Developer for 6 months, and then 6 more months as a Frontend Developer, which add to
+                            a total of 2 years of experience.<br/><br/>
+
+                            I'm looking to develop further as a Frontend Developer which is the role I enjoy the most.
+                        </div>
+                        <br/>
+                        <br/>
+                        <div>
+                            <a class="about-btn" href="files/resume.pdf" download="ManuelCarretero">Download CV</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services -->
+
+            <section id="services" class="reveal fade-right">
+                <div class="title">My services</div>
+                <div class="flex-row-container">
+                    <div class="service">
+                        <div class="service-img"><img src="img/frontend.svg" alt="frontend" /></div>
+                        <div class="service-title title">Frontend</div>
+                        I translate design into code with CSS, HTML and JavaScript
+                        and can create a responsive and scalable web applciation.
+                        Have developed apps with frameworks like React and Bootstrap.
+                    </div>
+                    <div class="service">
+                        <div class="service-img"><img src="img/backend.svg" alt="frontend" /></div>
+                        <div class="service-title title">Backend</div>
+                        I can manage information with SQL databases as well as create endpoints
+                        to exchange information between the back and the front.
+                        I have developed algorithms to achieve optimal performance for large
+                        scale applications. Worked with backend languages such as PHP, C#, Go, Kotlin.
+                    </div>
+                    <div class="service">
+                        <div class="service-img"><img src="img/design.svg" alt="frontend" /></div>
+                        <div class="service-title title">Design</div>
+                        I have designed UI elements in Photoshop and Windows Forms
+                        for a smooth user experience. Have done 3D modelling, texturing, rigging
+                        and animations in Blender which can work for web applications that
+                        employ three.js/Babylon.js.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio -->
+
+            <section id="portfolio" class="reveal fade-left">
+                <div class="title">Portfolio</div>
+                <div class="flex-row-container">
+                    <a class="portfolio-item" href="https://2048masac.netlify.app" target="_blank" rel="noopener noreferrer">
+                        <div style='background-image: url(img/2048.webp)' class="portfolio-item_content">
+                            2048 clone
+                        </div>
+                    </a>
+                    <a class="portfolio-item" href="https://connect4masac.netlify.app" target="_blank" rel="noopener noreferrer">
+                        <div style='background-image: url(img/c4.webp)' class="portfolio-item_content">
+                            Connect 4 clone
+                        </div>
+                    </a>
+                    <a class="portfolio-item" href="https://nechromatics.com/" target="_blank" rel="noopener noreferrer">
+                        <div style='background-image: url(img/nechro.webp)' class="portfolio-item_content">
+                            NFT site
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Footer -->
+
+            <footer id="contact">
+                <div class="contact-container">
+                    <div class="contact-vitals">
+                        <div class="title">Let's make something
+                            <br><strong class="contact-vitals-bold">phenomenal</strong>.
+                        </div>
+                        <div class="contact-vitals">
+                            <div><i class="fas fa-phone"></i><span>+52 222 1888 266</span></div><br>
+                            <div><i class="fas fa-envelope"></i><span>manuelalejandrosac@gmail.com</span></div>
+                        </div>
+                        <div class="contact-vitals-social">
+                            <a href="https://www.linkedin.com/in/manuel-sanchez-2b43801bb/" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href='https://github.com/Erzihark' target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href='https://www.instagram.com/manuelalejandrosac' target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form" action="https://formsubmit.co/426711cf8864ce854671e0760f655f12" method="POST">
+                        <input id="form-name" class="contact-form_field" type="text" placeholder="Your Name" required>
+                        <input id="form-email" class="contact-form_field" type="email" placeholder="Email Address" required>
+                        <textarea id="form-msg" class="contact-form_field" placeholder="Message..."></textarea>
+                        <input id="smit" class="contact-form_submit" type="submit"  value="Submit">
+                    </form>
+                </div>
+            </footer>
+        </div>
+
+        <script type="module" src="js/index.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    </body>
+</html>
