@@ -1,3 +1,4 @@
+//Slide ins
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
 
@@ -13,9 +14,9 @@ function reveal() {
         }
     }
 }
-
 window.addEventListener("scroll", reveal);
 
+//Sticky Nav
 let navbar = document.getElementById("navbar");
 let sticky = navbar.offsetTop;
 
@@ -26,7 +27,6 @@ window.onscroll = () => {
         navbar.classList.remove("sticky")
     }
 };
-
 document.getElementById('navigator').onclick = () => {
     let mobileNav = document.querySelectorAll('.header-links');
     for (let i = 0; i < mobileNav.length; i++){
@@ -37,6 +37,7 @@ document.getElementById('navigator').onclick = () => {
     }
 }
 
+//Mobile nav
 document.body.addEventListener('click', ()=>{
     let mobileNav = document.querySelectorAll('.header-links');
     if (mobileNav){
@@ -51,15 +52,7 @@ except.addEventListener("click", (e)=>{
     e.stopPropagation();
 }, false)
 
-/*let navLinks = document.getElementsByClassName('header-links');
-for (let i = 0; i < navLinks.length; i++){
-    navLinks[i].addEventListener('click', () =>{
-        for (let i = 0; i < navLinks.length; i++){
-            navLinks[i].classList.remove("mobile-nav");
-        }
-    })
-}*/
-
+//Email form send
 document.getElementById('smit').onclick = function(){
     let name = document.querySelectorAll('#form-name')[0].value;
     let email = document.querySelectorAll('#form-email')[0].value;
@@ -88,10 +81,4 @@ document.getElementById('smit').onclick = function(){
         });
 }
 
-
-
-/*
-<button className="nav-toggle" aria-label="toggle navigation">
-        <span className="hamburger"></span>
-    </button>
-*/
+//Carousel

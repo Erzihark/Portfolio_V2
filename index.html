@@ -19,7 +19,7 @@
     <body onload="loadedPage()">
         <div id="loader-container">
             <div class="loader"></div>
-            <div class="loader-txt">Loading</div>
+            <div class="loader-txt">Loading...</div>
         </div>
 
 
@@ -112,27 +112,84 @@
                 <div class="title">My services</div>
                 <div class="flex-row-container">
                     <div class="service">
-                        <div class="service-img"><img src="img/frontend.svg" alt="frontend" /></div>
-                        <div class="service-title title">Frontend</div>
-                        I translate design into code with CSS, HTML and JavaScript
-                        and can create a responsive and scalable web applciation.
-                        Have developed apps with frameworks like React and Bootstrap.
+                        <div class="carousel__wrapper">
+                            <div class="carousel__slide">
+                                <div class="carousel__image" style="height:14vw; width:13vw;  background-image: url('img/carousel/js.webp');"></div>
+                            </div>
+
+                            <div class="carousel__slide">
+                                <div class="carousel__image" style="height:14vw; width:14vw;  background-image: url('img/carousel/html.webp');"></div>
+                            </div>
+
+                            <div class="carousel__slide">
+                                <div class="carousel__image" style="height:14vw; width:13vw; background-image: url('img/carousel/css.webp');"></div>
+                            </div>
+
+                            <div class="carousel__slide">
+                                <div class="carousel__image" style="height:14vw; width:13vw; background-image: url('img/carousel/js.webp');"></div>
+                            </div>
+                        </div>
+                        <div class="service-info">
+                            <div class="service-img"><img src="img/frontend.svg" alt="frontend" /></div>
+                            <div class="service-title title">Frontend</div>
+                            I translate design into code with CSS, HTML and JavaScript
+                            and can create a responsive and scalable web application.
+                            Have developed apps with frameworks like React and Bootstrap.
+                        </div>
                     </div>
                     <div class="service">
-                        <div class="service-img"><img src="img/backend.svg" alt="frontend" /></div>
-                        <div class="service-title title">Backend</div>
-                        I can manage information with SQL databases as well as create endpoints
-                        to exchange information between the back and the front.
-                        I have developed algorithms to achieve optimal performance for large
-                        scale applications. Worked with backend languages such as PHP, C#, Go, Kotlin.
+                        <div class="carousel__wrapper">
+                            <div class="carousel__slide">
+                                <div class="carousel__image" style="height:10vw; width:14vw; background-image: url('img/carousel/php.webp');"></div>
+                            </div>
+
+                            <div class="carousel__slide">
+                                <div class="carousel__image" style="height:14vw; width:14vw;background-image: url('img/carousel/cs.webp');"></div>
+                            </div>
+
+                            <div class="carousel__slide">
+                                <div class="carousel__image" style="height:14vw; width:10vw;background-image: url('img/carousel/go.webp');"></div>
+                            </div>
+
+                            <div class="carousel__slide">
+                                <div class="carousel__image" style="height:10vw; width:14vw; background-image: url('img/carousel/php.webp');"></div>
+                            </div>
+                        </div>
+                        <div class="service-info">
+                            <div class="service-img"><img src="img/backend.svg" alt="backend" /></div>
+                            <div class="service-title title">Backend</div>
+                            I can manage information with SQL databases as well as create endpoints
+                            to exchange information between the back and the front.
+                            I have developed algorithms to achieve optimal performance for large
+                            scale applications. Worked with backend languages such as PHP, C#, Go, Kotlin.
+                        </div>
                     </div>
                     <div class="service">
-                        <div class="service-img"><img src="img/design.svg" alt="frontend" /></div>
-                        <div class="service-title title">Design</div>
-                        I have designed UI elements in Photoshop and Windows Forms
-                        for a smooth user experience. Have done 3D modelling, texturing, rigging
-                        and animations in Blender which can work for web applications that
-                        employ three.js/Babylon.js.
+                        <div class="carousel__wrapper">
+                            <div class="carousel__slide">
+                                <div class="carousel__image" style="height:14vw; width:14vw; background-image: url('img/carousel/ps.webp');"></div>
+                            </div>
+
+                            <div class="carousel__slide">
+                                <div class="carousel__image" style="height:8vw; width:10vw; background-image: url('img/carousel/blend.webp');"></div>
+                            </div>
+
+                            <div class="carousel__slide">
+                                <div class="carousel__image" style="height:14vw; width:14vw; background-image: url('img/carousel/wf.webp');"></div>
+                            </div>
+
+                            <div class="carousel__slide">
+                                <div class="carousel__image" style="height:14vw; width:14vw; background-image: url('img/carousel/ps.webp');"></div>
+                            </div>
+                        </div>
+                        <div class="service-info">
+                            <div class="service-img"><img src="img/design.svg" alt="design" /></div>
+                            <div class="service-title title">Design</div>
+                            I have designed UI elements in Photoshop and Windows Forms
+                            for a smooth user experience. Have done 3D modelling, texturing, rigging
+                            and animations in Blender which can work for web applications that
+                            employ three.js/Babylon.js.
+                        </div>
                     </div>
                 </div>
             </section>
