@@ -54,6 +54,7 @@ except.addEventListener("click", (e)=>{
 
 //Email form send
 document.getElementById('smit').onclick = function(){
+    debugger;
     let name = document.querySelectorAll('#form-name')[0].value;
     let email = document.querySelectorAll('#form-email')[0].value;
     let msg = document.querySelectorAll('#form-msg')[0].value;
@@ -80,5 +81,3 @@ document.getElementById('smit').onclick = function(){
             swal("Failed trying to send email, try again");
         });
 }
-
-//Carousel
