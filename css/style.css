@@ -326,7 +326,7 @@ header, section, footer {
 /*------------------------------------- Portfolio Carousel -----------------------------------------------------*/
 .p-carousel{
     position: relative;
-    height: 600px;
+    height: 80vh;
     margin: 0 auto;
 }
 
