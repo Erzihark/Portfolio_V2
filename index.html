@@ -11,7 +11,8 @@
             function loadedPage(){
                 setTimeout(()=>{
                     document.getElementById('loader-container').style.display = "none";
-                    document.getElementById('page').style.display = "block";
+                    document.getElementById('page').classList.remove('hidePage');
+                    document.getElementsByClassName('header-intro_hi')[0].classList.add('fade-bottom');
                 }, 1000);
             }
         </script>
@@ -24,7 +25,7 @@
 
 
 
-        <div id="page">
+        <div id="page" class="hidePage">
             <!-- Navbar -->
 
             <nav id="navbar"  class="header-bar">
@@ -49,7 +50,7 @@
 
             <header id="header">
                 <div class="header-intro">
-                    <div class="header-intro_hi active fade-bottom">
+                    <div class="header-intro_hi active">
                         Hi,
                         I'm <strong>Manuel, </strong>
                         a <strong>software engineer</strong>.
@@ -198,28 +199,87 @@
 
             <section id="portfolio" class="reveal fade-left">
                 <div class="title">Portfolio</div>
-                <div class="flex-row-container">
-                    <a class="portfolio-item" href="https://2048masac.netlify.app" target="_blank" rel="noopener noreferrer">
-                        <div style='background-image: url(img/2048.webp)' class="portfolio-item_content">
-                            2048 clone
-                        </div>
-                    </a>
-                    <a class="portfolio-item" href="https://connect4masac.netlify.app" target="_blank" rel="noopener noreferrer">
-                        <div style='background-image: url(img/c4.webp)' class="portfolio-item_content">
-                            Connect 4 clone
-                        </div>
-                    </a>
-                    <a class="portfolio-item" href="https://nechromatics.com" target="_blank" rel="noopener noreferrer">
-                        <div style='background-image: url(img/nechro.webp)' class="portfolio-item_content">
-                            NFT site
-                        </div>
-                    </a>
-                    <a class="portfolio-item" href="https://sorting-visualizer-masac.netlify.app" target="_blank" rel="noopener noreferrer">
-                        <div style='background-image: url(img/sorting.webp)' class="portfolio-item_content">
-                            Sorting algorithm visualizer
-                        </div>
-                    </a>
+                <div class="p-carousel">
+                    <button class="p-carousel-btn p-carousel-btn_left is-hidden">
+                        <i class="fa fa-angle-left highlight-animation"></i>
+                    </button>
+                    <div class="p-carousel-track_container">
+                        <ul class="p-carousel-track">
+                            <li class="p-carousel-slide current-slide">
+                                <div class="flex-row-container">
+                                    <div class="portfolio-item">
+                                        <div style='background-image: url(img/2048.webp)' class="portfolio-item_content">
+                                            <div>2048 clone</div>
+                                            <a href='https://github.com/Erzihark/2048' target="_blank" rel="noopener noreferrer">
+                                                <i class="fab fa-github highlight-animation"></i>
+                                            </a>
+                                            <a href='https://2048masac.netlify.app' target="_blank" rel="noopener noreferrer">
+                                                <i class="fa fa-eye highlight-animation"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-item">
+                                        <div style='background-image: url(img/cards.webp)' class="portfolio-item_content">
+                                            <div>Card memory game</div>
+                                            <a href='https://github.com/Erzihark/memoryGame' target="_blank" rel="noopener noreferrer">
+                                                <i class="fab fa-github highlight-animation"></i>
+                                            </a>
+                                            <a href='https://memory-masac.netlify.app' target="_blank" rel="noopener noreferrer">
+                                                <i class="fa fa-eye highlight-animation"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-item">
+                                        <div style='background-image: url(img/nechro.webp)' class="portfolio-item_content">
+                                            <div>NFT site</div>
+                                            <a href='https://github.com/Erzihark/NFTsite' target="_blank" rel="noopener noreferrer">
+                                                <i class="fab fa-github highlight-animation"></i>
+                                            </a>
+                                            <a href='https://nechromatics.com' target="_blank" rel="noopener noreferrer">
+                                                <i class="fa fa-eye highlight-animation"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-item">
+                                        <div style='background-image: url(img/sorting.webp)' class="portfolio-item_content">
+                                            <div>Sorting algorithm visualizer</div>
+                                            <a href='https://github.com/Erzihark/sortingVisualizer' target="_blank" rel="noopener noreferrer">
+                                                <i class="fab fa-github highlight-animation"></i>
+                                            </a>
+                                            <a href='https://sorting-visualizer-masac.netlify.app' target="_blank" rel="noopener noreferrer">
+                                                <i class="fa fa-eye highlight-animation"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="p-carousel-slide">
+                                <div class="flex-row-container">
+                                    <div class="portfolio-item">
+                                        <div style='background-image: url(img/c4.webp)' class="portfolio-item_content">
+                                            <div>Connect 4 clone</div>
+                                            <a href='https://github.com/Erzihark/Connect4' target="_blank" rel="noopener noreferrer">
+                                                <i class="fab fa-github highlight-animation"></i>
+                                            </a>
+                                            <a href='https://connect4masac.netlify.app/' target="_blank" rel="noopener noreferrer">
+                                                <i class="fa fa-eye highlight-animation"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="p-carousel-btn p-carousel-btn_right">
+                        <i class="fa fa-angle-right highlight-animation"></i>
+                    </button>
+
+                    <div class="p-carousel-nav">
+                        <button class="p-carousel-indicator current-slide"></button>
+                        <button class="p-carousel-indicator"></button>
+                    </div>
                 </div>
+                
             </section>
 
             <!-- Footer -->
@@ -257,7 +317,7 @@
             </footer>
         </div>
 
-        <script type="module" src="js/index.js"></script>
+        <script src="js/index.js"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     </body>

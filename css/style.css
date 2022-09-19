@@ -58,8 +58,9 @@ header, section, footer {
     padding: 0 15vw;
 }
 
-#page {
-    display: none;
+.hidePage {
+    position: fixed;
+    left: 100%;
 }
 
 .title {
@@ -194,6 +195,7 @@ header, section, footer {
 }
 
 .sticky {
+    z-index: 2;
     position: fixed;
     top: 0;
     width: 100%;
@@ -304,6 +306,7 @@ header, section, footer {
 .portfolio-item{
     width: 49%;
     margin-bottom: 2vw;
+    align-self: center;
 }
 
 .portfolio-item_content{
@@ -320,6 +323,82 @@ header, section, footer {
     background-size: cover;
     background-blend-mode: multiply;
 }
+/*------------------------------------- Portfolio Carousel -----------------------------------------------------*/
+.p-carousel{
+    position: relative;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.p-carousel-track_container{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.p-carousel-track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+.p-carousel-slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.p-carousel-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+}
+
+.p-carousel-slide .flex-row-container{
+    height: 100%;
+}
+
+.p-carousel-btn_left{
+    left: -5vw;
+}
+
+.p-carousel-btn_right{
+    right: -5vw;
+}
+
+.p-carousel-btn i{
+    font-size: 30px;
+    color: var(--clr-accent);
+    cursor: pointer;
+}
+
+.p-carousel-nav{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 20px;
+}
+
+.p-carousel-indicator{
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color:rgba(0, 0, 0, 0.3);
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.p-carousel-indicator.current-slide{
+    background-color: var(--clr-accent);
+}
+
+.is-hidden{ display: none;}
 
 /*----------------------------------------- Contact -------------------------------------------------*/
 
@@ -514,7 +593,7 @@ header, section, footer {
     }
 }
 
-/* Carousel */
+/*----------------------------------------- Skills carousel -------------------------------------------------*/
 
 @keyframes scroll {
     0% {
@@ -637,14 +716,14 @@ header, section, footer {
         display: block;
     }
 
-    * {
+    /* * {
         -webkit-transition: none !important;
         -moz-transition: none !important;
         -o-transition: none !important;
         -ms-transition: none !important;
         transition: none !important;
         animation-name:none !important;
-    }
+    } */
 
     :root{
         --fs-header: 40px;
