@@ -400,6 +400,52 @@ header, section, footer {
 
 .is-hidden{ display: none;}
 
+#iframe-container {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background: black; 
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#iframe{
+    width: 95%;
+    height: 95%;
+    margin: 0 2vh 2vh 2vh;
+}
+
+#iframe-container.hidden{
+    display: none;
+}
+
+#close-button {
+    margin: 10px 0 10px 10px;
+    float: right;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#close-button:hover{
+    background-color: var(--clr-accent);
+    color: var(--clr-low-dark);
+}
+
+#close-button.hidden {
+    display: none;
+}
+
 /*----------------------------------------- Contact -------------------------------------------------*/
 
 .contact-container{

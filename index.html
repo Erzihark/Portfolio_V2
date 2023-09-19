@@ -81,22 +81,20 @@
                     <div class="about-txt">
                         <div class="title">About Me</div>
                         <div class="about-txt_subtitle">
-                            I am a Software Engineer based in Mexico City
+                            I am a Software Engineer based in Puebla, Mexico.
                         </div>
                         <br/>
                         <div>
-                            I graduated from Mechatronics Engineering in 2019 and started my self-taught
-                            journey in software development in 2020, my first software project was a Unity
-                            game, there I found my passion for software development. <br/><br/>
-
-                            After that I did an internship for a small company where I did backend
-                            development and UI/UX design. Shortly after I began taking the MIT online
-                            courses for CS, studied JavaScript, data structures and algorithms and 6 months
-                            of studying later I landed a job at a fintech called UnDosTres where I worked as a Fullstack
-                            Developer for 6 months, and then 6 more months as a Frontend Developer, which add to
-                            a total of 2 years of experience.<br/><br/>
-
-                            I'm looking to develop further as a Frontend Developer which is the role I enjoy the most.
+                            I'm Manuel Alejandro Sánchez Arteaga Carretero, a self-taught software engineer with a Bachelor's in Mechatronics Engineering.
+                             My journey into tech began as a self-learner, driven by a deep curiosity for coding and innovation.
+                            <br/><br/>
+                            At UnDosTres, I developed an HTML to PDF converter, worked on mobile webviews, and contributed to a PHP SDK.
+                             Currently, at Evolve Media LLC, I specialize in Vue.js and React, crafting engaging ad templates that boost user engagement and conversion rates.
+                            <br/><br/>
+                            My passion for learning led me to work with various technologies, from Vue.js and React to PHP, C#, Go, and Kotlin.
+                             I thrive on solving complex problems and creating seamless user experiences.
+                            <br/><br/>
+                            Let's connect and explore how we can collaborate on exciting projects.
                         </div>
                         <br/>
                         <br/>
@@ -133,9 +131,8 @@
                         <div class="service-info">
                             <div class="service-img"><img src="img/frontend.svg" alt="frontend" /></div>
                             <div class="service-title title">Frontend</div>
-                            I translate design into code with CSS, HTML and JavaScript
-                            and can create a responsive and scalable web application.
-                            Have developed apps with frameworks like React and Bootstrap.
+                            I transform designs into code using CSS, HTML, and JavaScript to craft responsive and scalable web applications. 
+                            I've built applications using frameworks such as Vue, React, MUI (Material-UI), and Bootstrap.
                         </div>
                     </div>
                     <div class="service">
@@ -159,10 +156,9 @@
                         <div class="service-info">
                             <div class="service-img"><img src="img/backend.svg" alt="backend" /></div>
                             <div class="service-title title">Backend</div>
-                            I can manage information with SQL databases as well as create endpoints
-                            to exchange information between the back and the front.
-                            I have developed algorithms to achieve optimal performance for large
-                            scale applications. Worked with backend languages such as PHP, C#, Go, Kotlin.
+                            I adeptly manage SQL databases and create API endpoints for efficient data exchange between front and back ends. 
+                            My experience includes optimizing large-scale applications through algorithm development. 
+                            I'm experienced in backend languages like PHP, C#, Go, and Kotlin. 
                         </div>
                     </div>
                     <div class="service">
@@ -188,7 +184,7 @@
                             <div class="service-title title">Design</div>
                             I have designed UI elements in Photoshop and Windows Forms
                             for a smooth user experience. Have done 3D modelling, texturing, rigging
-                            and animations in Blender which can work for web applications that
+                            and animations in Blender for web applications that
                             employ three.js/Babylon.js.
                         </div>
                     </div>
@@ -214,8 +210,11 @@
                                                 <i class="fab fa-github highlight-animation"></i>
                                             </a>
                                             <a href='https://2048masac.netlify.app' target="_blank" rel="noopener noreferrer">
-                                                <i class="fa fa-eye highlight-animation"></i>
+                                                <i class="fa fa-external-link-alt highlight-animation"></i>
                                             </a>
+                                            <span class="portfolio-item_iframe" data-url="https://2048masac.netlify.app">
+                                                <i class="fa fa-code highlight-animation"></i>
+                                            </span>
                                         </div>
                                     </div>
                                     <div class="portfolio-item">
@@ -225,8 +224,11 @@
                                                 <i class="fab fa-github highlight-animation"></i>
                                             </a>
                                             <a href='https://memory-masac.netlify.app' target="_blank" rel="noopener noreferrer">
-                                                <i class="fa fa-eye highlight-animation"></i>
+                                                <i class="fa fa-external-link-alt highlight-animation"></i>
                                             </a>
+                                            <span class="portfolio-item_iframe" data-url="https://memory-masac.netlify.app">
+                                                <i class="fa fa-code highlight-animation"></i>
+                                            </span>
                                         </div>
                                     </div>
                                     <div class="portfolio-item">
@@ -235,7 +237,7 @@
                                             <a href='https://github.com/Erzihark/NFTsite' target="_blank" rel="noopener noreferrer">
                                                 <i class="fab fa-github highlight-animation"></i>
                                             </a>
-                                            <a href='https://nechromatics.com' target="_blank" rel="noopener noreferrer">
+                                            <a href='https://nechromatics.netlify.app/' target="_blank" rel="noopener noreferrer">
                                                 <i class="fa fa-eye highlight-animation"></i>
                                             </a>
                                         </div>
@@ -247,8 +249,11 @@
                                                 <i class="fab fa-github highlight-animation"></i>
                                             </a>
                                             <a href='https://sorting-visualizer-masac.netlify.app' target="_blank" rel="noopener noreferrer">
-                                                <i class="fa fa-eye highlight-animation"></i>
+                                                <i class="fa fa-external-link-alt highlight-animation"></i>
                                             </a>
+                                            <span class="portfolio-item_iframe" data-url="https://sorting-visualizer-masac.netlify.app">
+                                                <i class="fa fa-code highlight-animation"></i>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
@@ -281,6 +286,13 @@
                 </div>
                 
             </section>
+
+            <div id="iframe-container" class="hidden">
+                <div style="width: 95%; margin: 0 auto">
+                    <button id="close-button">x</button>
+                </div>
+                <iframe id="iframe"></iframe>          
+            </div>
 
             <!-- Footer -->
 

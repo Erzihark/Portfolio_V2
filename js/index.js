@@ -167,3 +167,44 @@ window.addEventListener('load', function () {
     }, 1000)
   })
 
+
+  //Portfolio iframe
+
+  const iframeElements = document.querySelectorAll('.portfolio-item_iframe');
+  const iframeContainer = document.getElementById('iframe-container');
+  const iframe = document.getElementById('iframe');
+  const closeButton = document.getElementById('close-button');
+  const overlay = document.createElement('div');
+  overlay.classList.add('overlay');
+  
+  // Function to open the iframe
+  function openIframe(url) {
+      iframe.src = url;
+      iframeContainer.classList.remove('hidden');
+      overlay.classList.remove('hidden');
+      document.body.style.overflow = 'hidden'; // Disable scrolling
+  }
+  
+  // Function to close the iframe
+  function closeIframe() {
+      iframeContainer.classList.add('hidden');
+      overlay.classList.add('hidden');
+      document.body.style.overflow = 'auto'; // Enable scrolling
+      iframe.src = ''; // Clear the iframe URL
+  }
+  
+  // Attach click event listeners to open the iframe
+  iframeElements.forEach((iframeElement) => {
+      iframeElement.addEventListener('click', () => {
+          const url = iframeElement.getAttribute('data-url');
+          openIframe(url);
+      });
+  });
+  
+  // Attach click event listener to close button
+  closeButton.addEventListener('click', closeIframe);
+  
+  // Append overlay to the body
+  document.body.appendChild(overlay);
+  
+
